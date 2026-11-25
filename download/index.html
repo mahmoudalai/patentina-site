@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Patentina — Scarica l'app · نزّل الأبلكيشن</title>
+<meta name="description" content="La patente italiana, spiegata in arabo. ذاكر الرخصة بالعربي وادخل الامتحان بالإيطالي. Scarica Patentina per iPhone e Android.">
+<meta name="theme-color" content="#060c18">
+<link rel="canonical" href="https://patentina.it/download/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://patentina.it/download/">
+<meta property="og:title" content="Patentina — La patente italiana, spiegata in arabo">
+<meta property="og:description" content="ذاكر بالعربي، وادخل الامتحان بالإيطالي. +7.000 domande, 24 lezioni, 476 esami simulati.">
+<meta property="og:image" content="https://patentina.it/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6827443573">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/ar.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/screens/quiz.webp" as="image">
+<style>
+@font-face{font-family:"PAr";src:url(/assets/ar.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F,U+060C,U+061B,U+061F,U+066B,U+066C}
+:root{
+  --bg:#060c18;--bg2:#0b1426;--card:#0f1b31;--line:rgba(255,255,255,.09);
+  --ink:#f6f3ee;--ar-ink:#f1ece4;--muted:#a9b3c4;
+  --or:#ff5a1f;--or2:#ff8a4f;--blue:#2f5bff;--green:#22c55e;
+  --r:22px;
+  --lat:"Avenir Next","Avenir","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --ar:"PAr","SF Arabic","Geeza Pro","Noto Sans Arabic",Tahoma,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--ar),var(--lat);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.it,[lang=it]{font-family:var(--lat)}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* ---------- ambient background ---------- */
+.sky{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:radial-gradient(120% 80% at 80% -10%,#13254a 0%,transparent 55%),radial-gradient(90% 60% at 0% 100%,#1a1430 0%,transparent 60%),var(--bg)}
+.blob{position:absolute;border-radius:50%;will-change:transform}
+.blob.a{width:620px;height:620px;background:radial-gradient(closest-side,rgba(255,90,31,.32),rgba(255,90,31,0));top:-260px;left:-240px;animation:drift 18s ease-in-out infinite alternate}
+.blob.b{width:720px;height:720px;background:radial-gradient(closest-side,rgba(47,91,255,.3),rgba(47,91,255,0));bottom:-320px;right:-260px;animation:drift 22s ease-in-out infinite alternate-reverse}
+.road{position:absolute;inset:auto 0 0 0;width:100%;height:70vh;opacity:.5}
+.road path{fill:none;stroke-linecap:round}
+.road .edge{stroke:url(#rg);stroke-width:2}
+.road .dash{stroke:#ff8a4f;stroke-width:2;stroke-dasharray:14 22;animation:dash 2.4s linear infinite;opacity:.7}
+@keyframes drift{to{transform:translate(80px,60px) scale(1.15)}}
+@keyframes dash{to{stroke-dashoffset:-72}}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);background:rgba(6,12,24,.55);border-bottom:1px solid transparent;transition:border-color .3s}
+header.scrolled{border-bottom-color:var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--lat);font-weight:800;font-size:19px;letter-spacing:-.01em;direction:ltr}
+.brand img{width:34px;height:34px;border-radius:50%}
+.pill{font-family:var(--lat);font-weight:700;font-size:14px;padding:9px 16px;border-radius:99px;background:var(--or);color:#fff;box-shadow:0 6px 20px -6px rgba(255,90,31,.7);transition:transform .2s}
+.pill:active{transform:scale(.96)}
+
+/* ---------- hero ---------- */
+.hero{padding-top:34px;padding-bottom:20px;display:grid;gap:34px;align-items:center}
+@media(min-width:900px){.hero{grid-template-columns:1.05fr .95fr;padding-top:70px;padding-bottom:40px;gap:40px}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--lat);font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--or2);background:rgba(255,90,31,.1);border:1px solid rgba(255,90,31,.25);padding:6px 12px;border-radius:99px;direction:ltr}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--or);box-shadow:0 0 0 0 rgba(255,90,31,.7);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 9px rgba(255,90,31,0)}100%{box-shadow:0 0 0 0 rgba(255,90,31,0)}}
+h1{margin-top:18px;font-size:clamp(34px,8.6vw,60px);line-height:1.18;font-weight:800;color:var(--ar-ink);letter-spacing:0}
+h1 .hl{display:block;padding:.08em 0 .22em;margin:-.08em 0 -.22em;background:linear-gradient(90deg,#ff5a1f,#ffb07a,#ff5a1f);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite}
+@keyframes shine{to{background-position:200% center}}
+.it-sub{margin-top:12px;font-family:var(--lat);font-weight:700;font-size:clamp(17px,4.4vw,22px);color:var(--ink);direction:ltr;text-align:right}
+.lead{margin-top:14px;font-size:17px;color:var(--ar-ink);opacity:.92;max-width:34em}
+
+/* ---------- store buttons ---------- */
+.stores{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+.store{position:relative;display:flex;align-items:center;gap:12px;min-width:208px;height:62px;padding:0 20px 0 18px;border-radius:16px;background:#fff;color:#0a0f1c;direction:ltr;text-align:left;box-shadow:0 14px 36px -14px rgba(0,0,0,.8);transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .2s;overflow:hidden;flex:1 1 208px;max-width:300px;-webkit-tap-highlight-color:transparent}
+.store svg{width:28px;height:28px;flex:none}
+.store small{display:block;font-family:var(--lat);font-size:11.5px;font-weight:600;opacity:.7;line-height:1.1}
+.store b{display:block;font-family:var(--lat);font-size:21px;font-weight:700;letter-spacing:-.01em;line-height:1.15}
+.store:hover{transform:translateY(-2px)}
+.store:active{transform:scale(.97)}
+.store.primary{background:linear-gradient(135deg,#ff6a2a,#ff4d12);color:#fff;box-shadow:0 18px 40px -14px rgba(255,90,31,.85)}
+.store.primary::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-120%);animation:sheen 3.6s ease-in-out 1.2s infinite}
+@keyframes sheen{0%,60%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+.store.soon{background:rgba(255,255,255,.06);color:var(--ink);border:1px dashed rgba(255,255,255,.22);box-shadow:none;cursor:default}
+.store.soon:hover,.store.soon:active{transform:none}
+.store.soon .tag{position:absolute;top:8px;right:10px;font-family:var(--lat);font-size:10px;font-weight:800;letter-spacing:.08em;color:var(--or2);text-transform:uppercase}
+.free{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14.5px;color:var(--ar-ink)}
+.free span{display:inline-flex;align-items:center;gap:6px}
+.free svg{width:16px;height:16px;color:var(--green)}
+.iab-hint{display:none;margin-top:14px;padding:12px 14px;border-radius:14px;background:rgba(47,91,255,.12);border:1px solid rgba(47,91,255,.35);font-size:14px;color:var(--ar-ink)}
+.iab .iab-hint{display:block}
+.iab-hint b{color:#fff}
+
+.stats{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:480px}
+.stat{padding:14px 10px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid var(--line);text-align:center}
+.stat b{display:block;font-family:var(--lat);font-weight:800;font-size:clamp(20px,5.6vw,26px);direction:ltr;color:#fff}
+.stat span{display:block;font-size:13px;color:var(--ar-ink);line-height:1.3}
+.stat i{display:block;font-style:normal;font-family:var(--lat);font-size:11px;color:var(--muted);margin-top:2px}
+
+/* ---------- phone showcase ---------- */
+.show{position:relative;display:grid;justify-items:center}
+.stage{position:relative;width:min(300px,74vw);aspect-ratio:9/19.2;perspective:1200px}
+.phone{position:absolute;inset:0;border-radius:46px;padding:11px;background:linear-gradient(145deg,#2a3550,#0d1424 40%,#1d2740);box-shadow:0 0 0 1.5px rgba(255,255,255,.12) inset,0 50px 90px -30px rgba(0,0,0,.9),0 0 80px -20px rgba(255,90,31,.35);transform:rotateY(-14deg) rotateX(6deg) rotateZ(2deg);transform-style:preserve-3d;animation:float 7s ease-in-out infinite;will-change:transform}
+@keyframes float{0%,100%{transform:rotateY(-14deg) rotateX(6deg) rotateZ(2deg) translateY(0)}50%{transform:rotateY(-8deg) rotateX(3deg) rotateZ(0deg) translateY(-12px)}}
+.screen{position:relative;width:100%;height:100%;border-radius:36px;overflow:hidden;background:#0b1426}
+.screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;opacity:0;transform:scale(1.06);transition:opacity .7s ease,transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.screen img.on{opacity:1;transform:scale(1)}
+.island{position:absolute;top:9px;left:50%;width:31%;height:22px;transform:translateX(-50%);background:#000;border-radius:20px;z-index:2}
+.glare{position:absolute;inset:0;border-radius:36px;background:linear-gradient(115deg,rgba(255,255,255,.14),transparent 38%);pointer-events:none;z-index:2}
+.chip{position:absolute;z-index:3;display:flex;align-items:center;gap:8px;padding:9px 13px;border-radius:14px;background:rgba(15,27,49,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.12);box-shadow:0 14px 30px -12px rgba(0,0,0,.8);font-size:13px;font-weight:700;white-space:nowrap;animation:bob 5s ease-in-out infinite}
+.chip .ic{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;font-size:14px;color:#fff}
+.chip.c1{top:14%;right:-14%;animation-delay:-1s}
+.chip.c1 .ic{background:var(--green)}
+.chip.c2{top:66%;left:-18%;animation-delay:-2.5s}
+.chip.c2 .ic{background:var(--or)}
+.chip.c3{bottom:9%;right:-10%;animation-delay:-4s}
+.chip.c3 .ic{background:var(--blue)}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media(max-width:420px){.chip.c1{right:-6%}.chip.c2{left:-8%}.chip.c3{right:-4%}.chip{font-size:12px;padding:7px 10px}}
+
+/* feature tabs synced to phone */
+.feats{margin-top:30px;width:100%;max-width:440px;display:grid;gap:8px}
+.feat{position:relative;display:flex;gap:12px;align-items:flex-start;width:100%;padding:12px 14px;border-radius:16px;text-align:right;border:1px solid transparent;transition:background .35s,border-color .35s;overflow:hidden}
+.feat .n{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,.06);font-size:17px;transition:background .35s}
+.feat h3{font-size:16px;font-weight:700;color:var(--ar-ink);line-height:1.35}
+.feat h3 .it{display:inline-block;font-size:12.5px;font-weight:600;color:var(--muted);margin-inline-start:8px;direction:ltr}
+.feat p{font-size:14px;color:var(--ar-ink);opacity:.85;max-height:0;overflow:hidden;transition:max-height .45s ease,opacity .35s,margin .35s;opacity:0}
+.feat.on{background:rgba(255,255,255,.05);border-color:var(--line)}
+.feat.on .n{background:var(--or)}
+.feat.on p{max-height:80px;opacity:.92;margin-top:3px}
+.feat .prog{position:absolute;bottom:0;right:0;height:2px;width:0;background:linear-gradient(90deg,var(--or2),var(--or))}
+.feat.on .prog{animation:prog var(--dur,3.6s) linear forwards}
+.paused .feat.on .prog{animation-play-state:paused}
+@keyframes prog{to{width:100%}}
+
+/* ---------- steps ---------- */
+section.block{padding:60px 0}
+.kicker{font-family:var(--lat);font-size:12.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--or2);direction:ltr;text-align:right}
+h2{margin-top:8px;font-size:clamp(26px,6.4vw,40px);line-height:1.25;font-weight:800;color:var(--ar-ink)}
+h2 .it{display:block;font-size:.55em;font-weight:700;color:var(--muted);margin-top:4px;direction:ltr;text-align:right}
+.steps{margin-top:26px;display:grid;gap:14px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{position:relative;padding:22px;border-radius:var(--r);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid var(--line);overflow:hidden}
+.step .num{font-family:var(--lat);font-weight:800;font-size:44px;line-height:1;background:linear-gradient(180deg,#ff8a4f,#ff5a1f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.step h3{margin-top:10px;font-size:19px;color:var(--ar-ink)}
+.step h3 .it{display:block;font-size:13px;color:var(--muted);font-weight:600;direction:ltr;text-align:right}
+.step p{margin-top:6px;font-size:15px;color:var(--ar-ink);opacity:.88}
+
+/* ---------- final cta ---------- */
+.final{position:relative;margin:10px 0 50px;padding:34px 22px;border-radius:30px;background:radial-gradient(120% 120% at 100% 0%,rgba(255,90,31,.35),transparent 55%),linear-gradient(160deg,#13213d,#0b1426);border:1px solid rgba(255,255,255,.1);overflow:hidden;display:grid;gap:26px;align-items:center}
+@media(min-width:860px){.final{grid-template-columns:1fr auto;padding:46px}}
+.final .stores{margin-top:20px}
+.qr{display:none;justify-items:center;gap:10px;padding:18px;border-radius:22px;background:#fff;color:#0b1426;text-align:center}
+.qr img{width:150px;height:150px}
+.qr span{font-family:var(--lat);font-size:12.5px;font-weight:700}
+@media(min-width:860px) and (hover:hover){.qr{display:grid}}
+
+footer{padding:30px 0 calc(110px + env(safe-area-inset-bottom));border-top:1px solid var(--line);font-size:13.5px;color:var(--muted)}
+@media(min-width:760px){footer{padding-bottom:40px}}
+footer .row{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between;align-items:center}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--lat);direction:ltr}
+footer a:hover{color:#fff}
+footer .legal{margin-top:10px;font-family:var(--lat);font-size:12px;direction:ltr;text-align:right}
+
+/* ---------- sticky mobile cta ---------- */
+.dock{position:fixed;z-index:30;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px;padding:10px 10px 10px 14px;border-radius:20px;background:rgba(15,27,49,.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.12);box-shadow:0 20px 50px -20px rgba(0,0,0,.9);transform:translateY(160%);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.dock.show{transform:none}
+.dock img{width:42px;height:42px;border-radius:12px}
+.dock .t{flex:1;min-width:0;line-height:1.25}
+.dock .t b{display:block;font-family:var(--lat);font-size:15px}
+.dock .t span{font-size:12.5px;color:var(--ar-ink);opacity:.85}
+.dock a{flex:none;font-family:var(--lat);font-weight:800;font-size:15px;padding:12px 18px;border-radius:14px;background:var(--or);color:#fff}
+@media(min-width:760px){.dock{display:none}}
+
+/* ---------- in-app browser sheet ---------- */
+.sheet{position:fixed;inset:0;z-index:50;display:none}
+.sheet.open{display:block}
+.sheet .scrim{position:absolute;inset:0;background:rgba(2,5,12,.72);animation:fade .25s ease}
+.sheet .panel{position:absolute;left:0;right:0;bottom:0;padding:26px 22px calc(24px + env(safe-area-inset-bottom));border-radius:26px 26px 0 0;background:#0f1b31;border-top:1px solid rgba(255,255,255,.12);animation:up .4s cubic-bezier(.2,.8,.2,1)}
+@media(min-width:640px){.sheet .panel{left:50%;right:auto;bottom:auto;top:50%;width:440px;border-radius:26px;transform:translate(-50%,-50%);animation:fade .3s}}
+.sheet h3{font-size:21px;color:#fff}
+.sheet h3 .it{display:block;font-size:14px;color:var(--muted);direction:ltr;text-align:right;font-weight:600}
+.sheet p{margin-top:10px;font-size:15.5px;color:var(--ar-ink)}
+.sheet ol{margin:12px 0 0;padding-inline-start:22px;font-size:15.5px;color:var(--ar-ink);display:grid;gap:6px}
+.sheet .dots{display:inline-grid;place-items:center;min-width:30px;height:24px;padding:0 6px;border-radius:7px;background:rgba(255,255,255,.12);font-family:var(--lat);font-weight:800;direction:ltr}
+.sheet .actions{margin-top:18px;display:grid;gap:10px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;height:52px;border-radius:15px;font-weight:700;font-size:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#fff}
+.btn.main{background:var(--or);border-color:transparent}
+.btn .it{font-size:13px;opacity:.75}
+.urlbox{margin-top:12px;padding:10px 12px;border-radius:12px;background:rgba(0,0,0,.3);font-family:ui-monospace,Menlo,monospace;font-size:14px;direction:ltr;text-align:center;user-select:all;-webkit-user-select:all;color:#fff}
+.pointer{position:fixed;top:calc(8px + env(safe-area-inset-top));right:14px;z-index:51;display:none;flex-direction:column;align-items:flex-end;gap:4px;color:#fff;font-family:var(--lat);font-weight:800;font-size:13px;pointer-events:none}
+.sheet.open~.pointer.on{display:flex}
+.pointer svg{width:46px;height:46px;animation:nudge 1.1s ease-in-out infinite}
+@keyframes nudge{50%{transform:translate(4px,-6px)}}
+@keyframes fade{from{opacity:0}}
+@keyframes up{from{transform:translateY(100%)}}
+.toast{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom));transform:translate(-50%,20px);opacity:0;z-index:60;padding:10px 16px;border-radius:12px;background:#fff;color:#0b1426;font-weight:700;font-size:14px;transition:.3s;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+.no-js .rv{opacity:1;transform:none}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+  .phone{transform:none}
+}
+</style>
+</head>
+<body class="no-js">
+<div class="sky" aria-hidden="true">
+  <div class="blob a"></div><div class="blob b"></div>
+  <svg class="road" viewBox="0 0 400 300" preserveAspectRatio="none">
+    <defs><linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#ff5a1f" stop-opacity="0"/><stop offset=".5" stop-color="#ff5a1f" stop-opacity=".8"/><stop offset="1" stop-color="#ff5a1f" stop-opacity="0"/></linearGradient></defs>
+    <path class="edge" d="M-20 300 C 90 230, 140 140, 420 110"/>
+    <path class="dash" d="M-20 300 C 90 230, 140 140, 420 110" transform="translate(0 18)"/>
+    <path class="edge" d="M-20 300 C 90 230, 140 140, 420 110" transform="translate(0 36)"/>
+  </svg>
+</div>
+
+<header id="top">
+  <div class="wrap bar">
+    <a class="brand" href="/download/" aria-label="Patentina">
+      <img src="/assets/logo.webp" width="34" height="34" alt="">Patentina
+    </a>
+    <a class="pill" href="#get" data-store="auto">Scarica · نزّل</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div>
+      <span class="eyebrow rv"><span class="dot"></span>Patente A · B — بالعربي</span>
+      <h1 class="rv d1">ذاكر بالعربي،<span class="hl">وادخل الامتحان بالإيطالي.</span></h1>
+      <p class="it-sub rv d2" lang="it">La patente italiana, spiegata in arabo.</p>
+      <p class="lead rv d2">كل اللي محتاجه عشان تنجح في امتحان الرخصة في إيطاليا: شرح بالمصري، أسئلة الامتحان بالترجمة، امتحانات تجريبية وألعاب — في أبلكيشن واحد.</p>
+
+      <div id="get" class="stores rv d3" data-stores></div>
+      <div class="free rv d3">
+        <span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg>ابدأ ببلاش <span class="it" lang="it" style="color:var(--muted)">· Inizia gratis</span></span>
+        <span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg>أول درس كامل مجاناً</span>
+      </div>
+      <div class="iab-hint" data-iab-hint></div>
+
+      <div class="stats rv d4">
+        <div class="stat"><b data-count="7000" data-suffix="+">7.000+</b><span>سؤال</span><i lang="it">domande</i></div>
+        <div class="stat"><b data-count="24">24</b><span>درس</span><i lang="it">lezioni</i></div>
+        <div class="stat"><b data-count="476">476</b><span>امتحان تجريبي</span><i lang="it">esami simulati</i></div>
+      </div>
+    </div>
+
+    <div class="show rv d2" id="showcase">
+      <div class="stage">
+        <div class="phone">
+          <div class="screen" data-screens>
+            <img class="on" src="/assets/screens/quiz.webp" alt="Quiz con traduzione araba" width="540" height="1169">
+            <img data-src="/assets/screens/theory.webp" alt="Teoria con immagini" width="540" height="1169">
+            <img data-src="/assets/screens/video.webp" alt="Video in egiziano" width="540" height="1169">
+            <img data-src="/assets/screens/buddy.webp" alt="Spiegami" width="540" height="1104">
+            <img data-src="/assets/screens/exam.webp" alt="Esame simulato" width="540" height="1169">
+            <img data-src="/assets/screens/game.webp" alt="Giochi sugli incroci" width="540" height="1169">
+            <img data-src="/assets/screens/mistakes.webp" alt="Ripasso errori" width="540" height="1169">
+          </div>
+          <div class="island"></div><div class="glare"></div>
+        </div>
+        <div class="chip c1" aria-hidden="true"><span class="ic">✓</span><span lang="it">VERO</span></div>
+        <div class="chip c2" aria-hidden="true"><span class="ic">ع</span>ترجمة لكل سؤال</div>
+        <div class="chip c3" aria-hidden="true"><span class="ic">▶</span><span lang="it">Video in egiziano</span></div>
+      </div>
+
+      <div class="feats" role="tablist" aria-label="Funzioni">
+        <button class="feat on" role="tab" aria-selected="true"><span class="n">📝</span><span><h3>أسئلة الامتحان بالترجمة<span class="it" lang="it">Quiz</span></h3><p>كل سؤال بالإيطالي، وجنبه الترجمة والشرح بالمصري.</p></span><i class="prog"></i></button>
+        <button class="feat" role="tab" aria-selected="false"><span class="n">📖</span><span><h3>النظري بالصور<span class="it" lang="it">Teoria</span></h3><p>كل كلمة مهمة في الامتحان، بالصورة والشرح.</p></span><i class="prog"></i></button>
+        <button class="feat" role="tab" aria-selected="false"><span class="n">🎬</span><span><h3>فيديوهات قصيرة بالمصري<span class="it" lang="it">Video</span></h3><p>كلمة واحدة، دقيقة واحدة، وتفهمها خلاص.</p></span><i class="prog"></i></button>
+        <button class="feat" role="tab" aria-selected="false"><span class="n">💬</span><span><h3>صاحبك بيشرحلك<span class="it" lang="it">Spiegami</span></h3><p>مش فاهم السؤال؟ اسأل، وهو يبسّطهولك.</p></span><i class="prog"></i></button>
+        <button class="feat" role="tab" aria-selected="false"><span class="n">⏱️</span><span><h3>امتحان زي الحقيقي<span class="it" lang="it">Esame simulato</span></h3><p>30 سؤال في 20 دقيقة، بنفس شكل الامتحان.</p></span><i class="prog"></i></button>
+        <button class="feat" role="tab" aria-selected="false"><span class="n">🎮</span><span><h3>اتعلم وانت بتلعب<span class="it" lang="it">Giochi</span></h3><p>مين يعدّي الأول؟ 227 مستوى في التقاطعات.</p></span><i class="prog"></i></button>
+        <button class="feat" role="tab" aria-selected="false"><span class="n">🔁</span><span><h3>راجع غلطاتك<span class="it" lang="it">Ripasso errori</span></h3><p>كل سؤال غلطت فيه يرجعلك لحد ما تفهمه.</p></span><i class="prog"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker rv">Come iniziare</p>
+      <h2 class="rv d1">تبدأ إزاي؟<span class="it" lang="it">Tre passi, e sei in strada.</span></h2>
+      <div class="steps">
+        <div class="step rv d1"><div class="num">1</div><h3>نزّل الأبلكيشن<span class="it" lang="it">Scarica l'app</span></h3><p>من الستور، في أقل من دقيقة.</p></div>
+        <div class="step rv d2"><div class="num">2</div><h3>جرّب ببلاش<span class="it" lang="it">Prova gratis</span></h3><p>الدرس الأول كامل، وأول امتحانات وألعاب من غير ما تدفع.</p></div>
+        <div class="step rv d3"><div class="num">3</div><h3>ادخل الامتحان وانت واثق<span class="it" lang="it">Supera l'esame</span></h3><p>اتمرّن على امتحانات زي الحقيقية لحد ما تبقى جاهز.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="final rv">
+      <div>
+        <p class="kicker">Scarica Patentina</p>
+        <h2>يلا نبدأ؟<span class="it" lang="it">La tua patente inizia qui.</span></h2>
+        <div class="stores" data-stores></div>
+      </div>
+      <div class="qr" aria-label="QR code"><img src="/assets/qr.svg" alt="QR patentina.it/download" width="150" height="150"><span>Inquadra con il telefono</span></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <a class="brand" href="/download/"><img src="/assets/logo.webp" width="28" height="28" alt="" style="width:28px;height:28px">Patentina</a>
+      <nav>
+        <a href="https://help.patentina.it/support.html">Supporto</a>
+        <a href="https://help.patentina.it/privacy.html">Privacy</a>
+        <a href="https://help.patentina.it/terms.html">Termini</a>
+        <a href="mailto:support@patentina.it">support@patentina.it</a>
+      </nav>
+    </div>
+    <p class="legal">© <span data-year>2026</span> Patentina · Mahmoud Alai · P.IVA 18791391008 · Roma, Italia</p>
+  </div>
+</footer>
+
+<div class="dock" data-dock aria-hidden="true">
+  <img src="/assets/logo.webp" alt="">
+  <div class="t"><b>Patentina</b><span>الرخصة الإيطالي بالعربي</span></div>
+  <a href="#get" data-store="auto">Scarica</a>
+</div>
+
+<div class="sheet" data-sheet role="dialog" aria-modal="true" aria-labelledby="sh-t">
+  <div class="scrim" data-close></div>
+  <div class="panel">
+    <h3 id="sh-t">افتح الصفحة في المتصفح<span class="it" lang="it">Apri la pagina nel browser</span></h3>
+    <p data-sheet-why>التطبيق اللي انت فاتح منه (تيك توك / إنستجرام) ساعات بيمنع فتح الستور.</p>
+    <ol>
+      <li>اضغط على <span class="dots">···</span> فوق على اليمين</li>
+      <li>اختار <b lang="it" data-open-label>«Apri nel browser»</b></li>
+      <li>واضغط على زرار التحميل تاني</li>
+    </ol>
+    <div class="urlbox">patentina.it/download</div>
+    <div class="actions">
+      <button class="btn main" data-escape>افتح في المتصفح <span class="it" lang="it">· Apri</span></button>
+      <button class="btn" data-copy>انسخ اللينك <span class="it" lang="it">· Copia link</span></button>
+      <button class="btn" data-close>رجوع</button>
+    </div>
+  </div>
+</div>
+<div class="pointer" data-pointer aria-hidden="true">
+  <svg viewBox="0 0 48 48" fill="none" stroke="#ff8a4f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 L38 12"/><path d="M20 11h18v18"/></svg>
+  <span>···</span>
+</div>
+<div class="toast" data-toast></div>
+
+<script>
+(function(){
+  "use strict";
+  // ===== Store configuration =====
+  var IOS_ID = "6827443573";
+  var IOS_URL = "https://apps.apple.com/it/app/patentina/id" + IOS_ID;
+  var IOS_DEEP = "itms-apps://apps.apple.com/it/app/patentina/id" + IOS_ID;
+  var PLAY_PKG = "com.patentina.app";
+  var PLAY_LIVE = false; // flip to true when the Google Play listing is public
+  var PLAY_URL = "https://play.google.com/store/apps/details?id=" + PLAY_PKG;
+  var PLAY_INTENT = "intent://details?id=" + PLAY_PKG + "#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=" + encodeURIComponent(PLAY_URL) + ";end";
+  var PAGE = "https://patentina.it/download/";
+
+  var d = document, b = d.body, ua = navigator.userAgent || "";
+  b.classList.remove("no-js");
+  var isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/i.test(ua);
+  var app = /musical_ly|Bytedance|TikTok|trill/i.test(ua) ? "TikTok"
+          : /Instagram/i.test(ua) ? "Instagram"
+          : /FBAN|FBAV|FB_IAB|FBIOS|FB4A/i.test(ua) ? "Facebook"
+          : /Messenger/i.test(ua) ? "Messenger"
+          : /Snapchat/i.test(ua) ? "Snapchat"
+          : /Line\//i.test(ua) ? "LINE"
+          : /Twitter|LinkedInApp|Pinterest/i.test(ua) ? "app"
+          : (isAndroid && /; wv\)/.test(ua)) ? "app" : "";
+  var inApp = !!app;
+  if (inApp) b.classList.add("iab");
+
+  // ===== Store buttons =====
+  var APPLE = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3-.79-1.55.02-2.97.9-3.77 2.28-1.6 2.79-.41 6.92 1.16 9.18.76 1.11 1.68 2.35 2.88 2.31 1.15-.05 1.59-.75 2.98-.75 1.39 0 1.78.75 3 .72 1.24-.02 2.03-1.12 2.79-2.24.87-1.29 1.23-2.53 1.25-2.6-.03-.01-2.4-.92-2.45-3.68zM14.08 5.83c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.82 1.02.08 2.07-.52 2.71-1.28z"/></svg>';
+  var PLAY = '<svg viewBox="0 0 24 24"><path fill="#00d4ff" d="M3.6 2.2c-.3.3-.4.7-.4 1.2v17.2c0 .5.1.9.4 1.2l.1.1 9.6-9.6v-.2L3.7 2.1z"/><path fill="#ffce00" d="M16.5 15.5l-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.2c1.1.6 1.1 1.6 0 2.2l-3.8 2.2z"/><path fill="#ff3a44" d="M16.6 15.4l-3.3-3.3-9.7 9.7c.4.4.9.4 1.6.1l11.4-6.5"/><path fill="#00f076" d="M16.6 8.8L5.2 2.3c-.7-.4-1.2-.3-1.6.1l9.7 9.7z"/></svg>';
+
+  function iosBtn(primary){
+    return '<a class="store' + (primary ? " primary" : "") + '" data-store="ios" href="' + IOS_URL + '" rel="noopener">' + APPLE +
+      '<span><small>Scarica su · نزّل من</small><b>App Store</b></span></a>';
+  }
+  function playBtn(primary){
+    if (!PLAY_LIVE) return '<div class="store soon" aria-disabled="true"><span class="tag">Presto</span>' + PLAY +
+      '<span><small>قريباً على · Presto su</small><b>Google Play</b></span></div>';
+    return '<a class="store' + (primary ? " primary" : "") + '" data-store="android" href="' + PLAY_URL + '" rel="noopener">' + PLAY +
+      '<span><small>Disponibile su · نزّل من</small><b>Google Play</b></span></a>';
+  }
+  var html = isAndroid ? playBtn(true) + iosBtn(false) : iosBtn(true) + playBtn(false);
+  d.querySelectorAll("[data-stores]").forEach(function(el){ el.innerHTML = html; });
+
+  var hint = d.querySelector("[data-iab-hint]");
+  if (inApp && hint) hint.innerHTML = (app !== "app" ? "فاتح من <b>" + app + "</b>؟ " : "") +
+    "لو الستور ما فتحش، اضغط <b>···</b> فوق واختار <b>Apri nel browser / Open in browser</b>.";
+  if (isAndroid && !PLAY_LIVE && hint) { hint.innerHTML = "نسخة أندرويد جاية قريب على Google Play. <span lang=\"it\">La versione Android arriva presto.</span>"; hint.style.display = "block"; }
+
+  // ===== Sheet =====
+  var sheet = d.querySelector("[data-sheet]"), pointer = d.querySelector("[data-pointer]");
+  function openSheet(){
+    if (app && app !== "app") d.querySelector("[data-sheet-why]").innerHTML = "<b>" + app + "</b> ساعات بيمنع فتح الستور من جوّه التطبيق. افتح الصفحة في المتصفح وهتشتغل على طول.";
+    d.querySelector("[data-open-label]").textContent = isIOS ? "«Apri nel browser» / «Open in Safari»" : "«Apri nel browser» / «Open in Chrome»";
+    sheet.classList.add("open"); pointer.classList.add("on");
+  }
+  function closeSheet(){ sheet.classList.remove("open"); pointer.classList.remove("on"); }
+  d.querySelectorAll("[data-close]").forEach(function(x){ x.addEventListener("click", closeSheet); });
+  function toast(t){ var el = d.querySelector("[data-toast]"); el.textContent = t; el.classList.add("on"); setTimeout(function(){ el.classList.remove("on"); }, 2200); }
+  d.querySelector("[data-copy]").addEventListener("click", function(){
+    var done = function(){ toast("اتنسخ ✓ · Link copiato"); };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(PAGE).then(done, legacy); else legacy();
+    function legacy(){ var t = d.createElement("textarea"); t.value = PAGE; t.setAttribute("readonly",""); t.style.cssText = "position:fixed;opacity:0"; d.body.appendChild(t); t.select(); t.setSelectionRange(0, 999); try { d.execCommand("copy"); done(); } catch(e) { toast(PAGE); } d.body.removeChild(t); }
+  });
+  d.querySelector("[data-escape]").addEventListener("click", function(){
+    if (isAndroid) location.href = "intent://" + PAGE.replace(/^https:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=" + encodeURIComponent(PAGE) + ";end";
+    else if (isIOS) location.href = "x-safari-" + PAGE;
+    else window.open(PAGE, "_blank");
+  });
+
+  // ===== Store click handling (the TikTok / Instagram fix) =====
+  function tryOpen(url){
+    var left = false;
+    function onHide(){ if (d.hidden) left = true; }
+    d.addEventListener("visibilitychange", onHide);
+    window.addEventListener("pagehide", function(){ left = true; }, { once: true });
+    location.href = url;
+    setTimeout(function(){ d.removeEventListener("visibilitychange", onHide); if (!left && !d.hidden) openSheet(); }, 1800);
+  }
+  d.addEventListener("click", function(e){
+    var a = e.target.closest && e.target.closest("[data-store]"); if (!a) return;
+    var kind = a.getAttribute("data-store");
+    if (kind === "auto") {
+      // Header + dock buttons: on phones go straight to the right store, otherwise scroll to buttons.
+      if (isIOS) kind = "ios"; else if (isAndroid && PLAY_LIVE) kind = "android"; else return;
+    }
+    if (kind === "ios") {
+      if (inApp && isIOS) { e.preventDefault(); tryOpen(IOS_DEEP); }
+      else if (a.tagName !== "A" || a.getAttribute("href") !== IOS_URL) { e.preventDefault(); location.href = IOS_URL; }
+    } else if (kind === "android") {
+      if (isAndroid) { e.preventDefault(); tryOpen(inApp ? PLAY_INTENT : "market://details?id=" + PLAY_PKG); if (!inApp) setTimeout(function(){ if (!d.hidden) location.href = PLAY_URL; }, 900); }
+    }
+  });
+
+  // ===== Feature showcase =====
+  var imgs = d.querySelectorAll("[data-screens] img"), feats = d.querySelectorAll(".feat"), show = d.getElementById("showcase");
+  var cur = 0, DUR = 3600, timer = null, reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function load(i){ var im = imgs[i]; if (im && im.dataset.src) { im.src = im.dataset.src; im.removeAttribute("data-src"); } }
+  function go(i, user){
+    i = (i + feats.length) % feats.length;
+    load(i); load((i + 1) % feats.length);
+    imgs[cur].classList.remove("on"); feats[cur].classList.remove("on"); feats[cur].setAttribute("aria-selected","false");
+    cur = i;
+    imgs[cur].classList.add("on"); feats[cur].classList.add("on"); feats[cur].setAttribute("aria-selected","true");
+    var p = feats[cur].querySelector(".prog"); p.style.animation = "none"; p.offsetWidth; p.style.animation = "";
+    schedule(user ? DUR * 1.6 : DUR);
+  }
+  function schedule(ms){ clearTimeout(timer); if (reduce) return; feats[cur].style.setProperty("--dur", ms + "ms"); timer = setTimeout(function(){ go(cur + 1); }, ms); }
+  feats.forEach(function(f, i){ f.addEventListener("click", function(){ go(i, true); }); });
+  window.addEventListener("load", function(){ load(1); });
+  d.addEventListener("visibilitychange", function(){ if (d.hidden) { clearTimeout(timer); show.classList.add("paused"); } else { show.classList.remove("paused"); go(cur); } });
+  schedule(DUR);
+
+  // ===== Reveal + count-up =====
+  var io = "IntersectionObserver" in window ? new IntersectionObserver(function(es){
+    es.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); if (en.target.classList.contains("stats")) count(); } });
+  }, { threshold: .12 }) : null;
+  d.querySelectorAll(".rv").forEach(function(el){ io ? io.observe(el) : el.classList.add("in"); });
+  function count(){
+    if (reduce) return;
+    d.querySelectorAll("[data-count]").forEach(function(el){
+      var n = +el.dataset.count, s = el.dataset.suffix || "", t0 = performance.now();
+      (function tick(t){ var k = Math.min(1, (t - t0) / 1400), v = Math.round(n * (1 - Math.pow(1 - k, 3)));
+        el.textContent = String(v).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + s; if (k < 1) requestAnimationFrame(tick); })(t0);
+    });
+  }
+
+  // ===== Header + dock =====
+  var hdr = d.getElementById("top"), dock = d.querySelector("[data-dock]"), heroBtns = d.getElementById("get");
+  function onScroll(){
+    hdr.classList.toggle("scrolled", scrollY > 8);
+    var r = heroBtns.getBoundingClientRect();
+    dock.classList.toggle("show", r.bottom < 0);
+  }
+  addEventListener("scroll", onScroll, { passive: true }); onScroll();
+  d.querySelector("[data-year]").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
