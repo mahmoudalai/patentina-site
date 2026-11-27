@@ -1,0 +1,118 @@
+{
+  "books": [
+    {
+      "slug": "100-parole",
+      "file": "Patentina-100-parole-patente.pdf",
+      "source": "vocab",
+      "title": "100 Parole",
+      "description": "أهم ١٠٠ كلمة لازم تعرفها في امتحان الرخصة",
+      "keywords": "مصطلحات كلمات مفردات vocabolario termini",
+      "href": "/library/assets/files/f0634a1529a2a132/Patentina-100-parole-patente.pdf",
+      "bytes": 5678324,
+      "cover": "/library/assets/covers/894dcc1df8027f86/100-parole.webp",
+      "pages": 24
+    },
+    {
+      "slug": "100-segnali",
+      "file": "Patentina-100-segnali.pdf",
+      "source": "signs",
+      "title": "100 Segnali",
+      "description": "أهم ١٠٠ إشارة مرورية لازم تكون عارفها",
+      "keywords": "علامات اشارات لافتات cartelli segnaletica",
+      "href": "/library/assets/files/222030c710a2c888/Patentina-100-segnali.pdf",
+      "bytes": 6526576,
+      "cover": "/library/assets/covers/5f0251c19d21baeb/100-segnali.webp",
+      "pages": 22
+    },
+    {
+      "slug": "domande-gemelle",
+      "file": "Patentina-domande-gemelle.pdf",
+      "source": "twins",
+      "title": "Domande Gemelle",
+      "description": "الأسئلة المتشابهة وإزاي تفرّق بينها بسهولة",
+      "keywords": "اسئلة توأم امتحان quiz trabocchetti",
+      "href": "/library/assets/files/a0132965ebaa468c/Patentina-domande-gemelle.pdf",
+      "bytes": 5190696,
+      "cover": "/library/assets/covers/827e4eb699efa2cb/domande-gemelle.webp",
+      "pages": 19
+    },
+    {
+      "slug": "numeri-esame",
+      "file": "Patentina-numeri-esame.pdf",
+      "source": "numbers",
+      "title": "Numeri dell’Esame",
+      "description": "أهم الأرقام اللي لازم تحفظها قبل الامتحان",
+      "keywords": "ارقام سرعات velocità limiti",
+      "href": "/library/assets/files/52fd6d801c1c4dc9/Patentina-numeri-esame.pdf",
+      "bytes": 4396110,
+      "cover": "/library/assets/covers/70566743e5f6db2e/numeri-esame.webp",
+      "pages": 16
+    },
+    {
+      "slug": "guida-esame",
+      "file": "Patentina-guida-esame.pdf",
+      "source": "examday",
+      "title": "Guida all’Esame",
+      "description": "دليلك عشان تدخل الامتحان وإنت جاهز وواثق من نفسك",
+      "keywords": "الامتحان النظري أوراق إجراءات teoria documenti",
+      "href": "/library/assets/files/b5fcffd9a3eedbb9/Patentina-guida-esame.pdf",
+      "bytes": 5066080,
+      "cover": "/library/assets/covers/8225adfbc499e0be/guida-esame.webp",
+      "pages": 20
+    },
+    {
+      "slug": "spie-cruscotto",
+      "file": "Patentina-spie-cruscotto.pdf",
+      "source": "spie",
+      "title": "Spie del Cruscotto",
+      "description": "شرح علامات ولمبات التابلوه في العربية",
+      "keywords": "الطبلون لمبات motore avvisi",
+      "href": "/library/assets/files/64a90e7a5a4dc424/Patentina-spie-cruscotto.pdf",
+      "bytes": 4628320,
+      "cover": "/library/assets/covers/816994027d1992e5/spie-cruscotto.webp",
+      "pages": 23
+    },
+    {
+      "slug": "fermata-sosta",
+      "file": "Patentina-fermata-sosta.pdf",
+      "source": "parking",
+      "title": "Fermata e Sosta",
+      "description": "قواعد الوقفة القصيرة والركن والفرق بينهم",
+      "keywords": "وقوف انتظار parcheggio",
+      "href": "/library/assets/files/0433cbfa85fb4279/Patentina-fermata-sosta.pdf",
+      "bytes": 6238656,
+      "cover": "/library/assets/covers/5bacb3bb0b583fcd/fermata-sosta.webp",
+      "pages": 26
+    },
+    {
+      "slug": "precedenza-incroci",
+      "file": "Patentina-precedenza-incroci.pdf",
+      "source": "priority",
+      "title": "Precedenza e Incroci",
+      "description": "قواعد الأولوية عند التقاطعات ومين يعدّي الأول",
+      "keywords": "الأسبقية التقاطع الدوار rotatoria intersezioni",
+      "href": "/library/assets/files/4c92a3bb7a9e0f9e/Patentina-precedenza-incroci.pdf",
+      "bytes": 5547265,
+      "cover": "/library/assets/covers/e55f4bffcb84137b/precedenza-incroci.webp",
+      "pages": 19
+    },
+    {
+      "slug": "punti-sanzioni",
+      "file": "Patentina-punti-sanzioni.pdf",
+      "source": "punti",
+      "title": "Punti e Sanzioni",
+      "description": "نقاط الرخصة والمخالفات والعقوبات",
+      "keywords": "نقط غرامة multa multe infrazioni",
+      "href": "/library/assets/files/3f0447f5caca0f77/Patentina-punti-sanzioni.pdf",
+      "bytes": 5118399,
+      "cover": "/library/assets/covers/59235bb49e27d147/punti-sanzioni.webp",
+      "pages": 21
+    }
+  ],
+  "archive": {
+    "href": "/library/assets/files/1e47f155474f4d12/Patentina-Free-Library.zip",
+    "bytes": 36972712,
+    "file": "Patentina-Free-Library.zip"
+  },
+  "ogImage": "/library/assets/covers/d5b9e48517b4b3de/patentina-free-library.jpg"
+}
