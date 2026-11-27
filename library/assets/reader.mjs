@@ -5,7 +5,7 @@ const sheet = reader.querySelector('.reader-sheet');
 const status = reader.querySelector('.reader-status');
 const error = reader.querySelector('.reader-error');
 const input = tools.querySelector('input');
-const buttons = Object.fromEntries(Array.from(tools.querySelectorAll('button'), button => [button.dataset.reader,button]));
+const buttons = Object.fromEntries(Array.from(reader.querySelectorAll('button[data-reader]'), button => [button.dataset.reader,button]));
 let book;
 let loading;
 let pageNumber = 1;
