@@ -1,406 +1,226 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar-EG" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Patentina — Scarica l'app · نزّل الأبلكيشن</title>
-<meta name="description" content="La patente italiana, spiegata in arabo. ذاكر الرخصة بالعربي وادخل الامتحان بالإيطالي. Scarica Patentina per iPhone.">
-<meta name="theme-color" content="#070d1a">
-<link rel="canonical" href="https://patentina.it/download/">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://patentina.it/download/">
-<meta property="og:title" content="Patentina — La patente italiana, spiegata in arabo">
-<meta property="og:description" content="ذاكر بالعربي، وادخل الامتحان بالإيطالي. +7.000 domande, 24 lezioni, 476 esami simulati.">
-<meta property="og:image" content="https://patentina.it/assets/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="apple-itunes-app" content="app-id=6827443573">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="/assets/ar.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/screens/quiz.webp" as="image">
-<style>
-@font-face{font-family:"PAr";src:url(/assets/ar.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F}
-:root{
-  --bg:#070d1a;--line:rgba(255,255,255,.08);
-  --ink:#f6f3ee;--ar-ink:#efe9e1;--muted:#98a3b6;
-  --or:#ff5a1f;--or2:#ff8a4f;
-  --lat:"Avenir Next","Avenir","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  --ar:"PAr","SF Arabic","Geeza Pro","Noto Sans Arabic",Tahoma,sans-serif;
-  color-scheme:dark;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font-family:var(--ar),var(--lat);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;min-height:100vh}
-a{color:inherit;text-decoration:none}
-img{display:block;max-width:100%}
-button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-[lang=it]{font-family:var(--lat)}
-.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 24px}
-
-/* calm background: one soft glow */
-.sky{position:fixed;inset:0;z-index:-1;pointer-events:none;background:
-  radial-gradient(70% 45% at 50% 0%,rgba(255,90,31,.16),transparent 70%),
-  radial-gradient(60% 40% at 50% 100%,rgba(47,91,255,.12),transparent 70%),var(--bg)}
-
-header{padding:calc(18px + env(safe-area-inset-top)) 0 0}
-.brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--lat);font-weight:800;font-size:18px;direction:ltr}
-.brand img{width:32px;height:32px;border-radius:50%}
-.top{display:flex;justify-content:center}
-@media(min-width:900px){.top{justify-content:flex-start}}
-
-/* ---------- hero ---------- */
-.hero{padding-top:44px;padding-bottom:24px;display:grid;gap:56px;text-align:center;justify-items:center}
-@media(min-width:900px){.hero{grid-template-columns:1fr 1fr;align-items:center;text-align:right;justify-items:start;padding-top:72px;gap:48px}}
-.eyebrow{font-family:var(--lat);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--or2);direction:ltr}
-h1{margin-top:16px;font-size:clamp(32px,8.4vw,54px);line-height:1.3;font-weight:800;color:var(--ar-ink)}
-h1 .hl{display:block;color:var(--or2)}
-.it-sub{margin-top:14px;font-family:var(--lat);font-weight:600;font-size:17px;color:var(--muted);direction:ltr}
-
-/* ---------- CTA ---------- */
-.cta{margin-top:40px;width:100%;max-width:340px;display:grid;justify-items:center;gap:14px}
-@media(min-width:900px){.cta{justify-items:start}}
-.tap{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600;color:var(--ar-ink)}
-.tap .arrow{display:inline-block;color:var(--or2);animation:point 1.4s ease-in-out infinite}
-@keyframes point{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
-.store{position:relative;display:flex;align-items:center;justify-content:center;gap:14px;width:100%;height:70px;border-radius:20px;direction:ltr;-webkit-tap-highlight-color:transparent;transition:transform .2s cubic-bezier(.2,.8,.2,1)}
-.store svg{width:30px;height:30px;flex:none}
-.store small{display:block;font-family:var(--lat);font-size:12px;font-weight:600;opacity:.85;line-height:1.1;text-align:left}
-.store b{display:block;font-family:var(--lat);font-size:23px;font-weight:700;line-height:1.15;text-align:left}
-.store:active{transform:scale(.97)}
-.store.primary{background:linear-gradient(135deg,#ff6a2a,#ff4d12);color:#fff;box-shadow:0 16px 40px -16px rgba(255,90,31,.9);animation:nudge 3.2s ease-in-out 1.5s infinite}
-/* soft ripple rings that say "tap me" */
-.store.primary::before,.store.primary::after{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid rgba(255,138,79,.7);opacity:0;animation:ring 2.4s cubic-bezier(.2,.6,.3,1) infinite;pointer-events:none}
-.store.primary::after{animation-delay:1.2s}
-@keyframes ring{0%{opacity:.8;transform:scale(1)}100%{opacity:0;transform:scale(1.12,1.35)}}
-@keyframes nudge{0%,86%,100%{transform:scale(1)}90%{transform:scale(1.04)}94%{transform:scale(.99)}}
-.store.secondary{height:58px;background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--ink)}
-.store.secondary b{font-size:19px}
-.free{font-size:14px;color:var(--muted)}
-.free b{color:var(--ar-ink);font-weight:600}
-.soon{font-size:13.5px;color:var(--muted)}
-.soon [lang=it]{font-size:12.5px}
-.iab-hint{display:none;font-size:13.5px;color:var(--muted);max-width:320px}
-.iab .iab-hint{display:block}
-.iab-hint b{color:var(--ar-ink)}
-
-/* ---------- phone ---------- */
-.show{display:grid;justify-items:center;width:100%}
-.stage{position:relative;width:min(270px,68vw);aspect-ratio:9/19.2}
-.phone{position:absolute;inset:0;border-radius:44px;padding:10px;background:linear-gradient(145deg,#273149,#0d1424 45%,#1b2338);box-shadow:0 0 0 1px rgba(255,255,255,.1) inset,0 40px 80px -30px rgba(0,0,0,.9);animation:float 8s ease-in-out infinite}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-.screen{position:relative;width:100%;height:100%;border-radius:35px;overflow:hidden;background:#0b1426}
-.screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;opacity:0;transition:opacity .8s ease}
-.screen img.on{opacity:1}
-.island{position:absolute;top:8px;left:50%;width:30%;height:20px;transform:translateX(-50%);background:#000;border-radius:20px;z-index:2}
-
-.cap{margin-top:30px;min-height:84px;text-align:center;max-width:300px}
-.cap h3{font-size:19px;font-weight:700;color:var(--ar-ink);transition:opacity .35s}
-.cap h3 span{display:block;font-family:var(--lat);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--or2);margin-bottom:4px;direction:ltr}
-.cap p{margin-top:4px;font-size:15px;color:var(--muted);transition:opacity .35s}
-.cap.fade h3,.cap.fade p{opacity:0}
-.dots{margin-top:14px;display:flex;gap:8px;justify-content:center;direction:ltr}
-.dots button{width:7px;height:7px;border-radius:99px;background:rgba(255,255,255,.2);transition:width .35s,background .35s;padding:0}
-.dots button.on{width:22px;background:var(--or)}
-
-/* ---------- numbers ---------- */
-.nums{padding:64px 0 24px;display:flex;justify-content:center;gap:clamp(28px,9vw,80px);text-align:center}
-.nums b{display:block;font-family:var(--lat);font-weight:800;font-size:clamp(26px,7vw,34px);color:#fff;direction:ltr}
-.nums span{display:block;font-size:14px;color:var(--muted)}
-
-/* ---------- final ---------- */
-.final{margin:56px auto 0;padding:48px 24px;max-width:560px;text-align:center;display:grid;justify-items:center;border-top:1px solid var(--line)}
-.final h2{font-size:clamp(26px,6vw,34px);font-weight:800;color:var(--ar-ink);line-height:1.35}
-.final h2 span{display:block;font-family:var(--lat);font-size:15px;font-weight:600;color:var(--muted);margin-top:6px}
-.final .cta{margin-top:28px}
-.qr{display:none;margin-top:28px;padding:14px;border-radius:18px;background:#fff}
-.qr img{width:120px;height:120px}
-@media(min-width:900px) and (hover:hover){.qr{display:block}}
-
-footer{padding:32px 0 calc(120px + env(safe-area-inset-bottom));font-size:13px;color:var(--muted);text-align:center}
-@media(min-width:760px){footer{padding-bottom:40px}}
-footer nav{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;font-family:var(--lat);direction:ltr}
-footer a:hover{color:#fff}
-footer .legal{margin-top:12px;font-family:var(--lat);font-size:11.5px;direction:ltr;opacity:.8}
-
-/* ---------- sticky mobile cta ---------- */
-.dock{position:fixed;z-index:30;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom));transform:translateY(160%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
-.dock.show{transform:none}
-.dock .store{height:60px;box-shadow:0 18px 40px -12px rgba(0,0,0,.8)}
-.dock .store b{font-size:20px}
-@media(min-width:760px){.dock{display:none}}
-
-/* ---------- in-app browser sheet ---------- */
-.sheet{position:fixed;inset:0;z-index:50;display:none}
-.sheet.open{display:block}
-.sheet .scrim{position:absolute;inset:0;background:rgba(2,5,12,.72);animation:fade .25s ease}
-.sheet .panel{position:absolute;left:0;right:0;bottom:0;padding:28px 24px calc(26px + env(safe-area-inset-bottom));border-radius:26px 26px 0 0;background:#0f1b31;border-top:1px solid rgba(255,255,255,.12);animation:up .4s cubic-bezier(.2,.8,.2,1)}
-@media(min-width:640px){.sheet .panel{left:50%;right:auto;bottom:auto;top:50%;width:440px;border-radius:26px;transform:translate(-50%,-50%);animation:fade .3s}}
-.sheet h3{font-size:21px;color:#fff}
-.sheet h3 span{display:block;font-family:var(--lat);font-size:14px;color:var(--muted);font-weight:600;direction:ltr;text-align:right}
-.sheet p{margin-top:10px;font-size:15.5px;color:var(--ar-ink)}
-.sheet ol{margin:12px 0 0;padding-inline-start:22px;font-size:15.5px;color:var(--ar-ink);display:grid;gap:6px}
-.sheet .dots3{display:inline-grid;place-items:center;min-width:30px;height:24px;padding:0 6px;border-radius:7px;background:rgba(255,255,255,.12);font-family:var(--lat);font-weight:800;direction:ltr}
-.sheet .actions{margin-top:18px;display:grid;gap:10px}
-.btn{display:flex;align-items:center;justify-content:center;gap:8px;height:52px;border-radius:15px;font-weight:700;font-size:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#fff}
-.btn.main{background:var(--or);border-color:transparent}
-.btn [lang=it]{font-size:13px;opacity:.75}
-.urlbox{margin-top:12px;padding:10px 12px;border-radius:12px;background:rgba(0,0,0,.3);font-family:ui-monospace,Menlo,monospace;font-size:14px;direction:ltr;text-align:center;user-select:all;-webkit-user-select:all;color:#fff}
-.pointer{position:fixed;top:calc(8px + env(safe-area-inset-top));right:14px;z-index:51;display:none;flex-direction:column;align-items:flex-end;gap:4px;color:#fff;font-family:var(--lat);font-weight:800;font-size:13px;pointer-events:none}
-.pointer.on{display:flex}
-.pointer svg{width:46px;height:46px;animation:pt 1.1s ease-in-out infinite}
-@keyframes pt{50%{transform:translate(4px,-6px)}}
-@keyframes fade{from{opacity:0}}
-@keyframes up{from{transform:translateY(100%)}}
-.toast{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom));transform:translate(-50%,20px);opacity:0;z-index:60;padding:10px 16px;border-radius:12px;background:#fff;color:#0b1426;font-weight:700;font-size:14px;transition:.3s;pointer-events:none}
-.toast.on{opacity:1;transform:translate(-50%,0)}
-
-/* ---------- gentle reveal ---------- */
-.rv{opacity:0;transform:translateY(16px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
-.rv.in{opacity:1;transform:none}
-.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
-.no-js .rv{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Patentina | ذاكر رخصة السواقة الإيطالية بالمصري</title>
+  <meta name="description" content="استعد لنظري رخصة السواقة الإيطالية مع Patentina. دروس وفيديوهات بالمصري، أكتر من ٧٬٠٠٠ سؤال بالإيطالي مع ترجمة، ومحاكاة للامتحان. نزّل التطبيق مجانًا على iPhone.">
+  <meta name="theme-color" content="#0a101b">
+  <link rel="canonical" href="https://patentina.it/download/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://patentina.it/download/">
+  <meta property="og:title" content="Patentina — La patente italiana, spiegata in arabo">
+  <meta property="og:description" content="ذاكر نظري الرخصة الإيطالية بالمصري، واتدرّب على الأسئلة بالإيطالي.">
+  <meta property="og:image" content="https://patentina.it/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6827443573">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/assets/ar.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/landing.css">
+  <script src="/assets/landing.js" defer></script>
 </head>
-<body class="no-js">
-<div class="sky" aria-hidden="true"></div>
+<body>
+  <a class="skip-link" href="#main">روح للمحتوى</a>
 
-<header>
-  <div class="wrap top">
-    <a class="brand" href="/download/" aria-label="Patentina"><img src="/assets/logo.webp" width="32" height="32" alt="">Patentina</a>
-  </div>
-</header>
+  <header class="wrap header">
+    <a class="brand" href="/download/" aria-label="Patentina">
+      <img src="/assets/logo.webp" width="36" height="36" alt="">
+      <span>Patentina</span>
+    </a>
+    <nav aria-label="القائمة">
+      <a href="#features">المميزات</a>
+      <a href="/library/">كتب مجانية</a>
+    </nav>
+  </header>
 
-<main>
-  <div class="wrap hero">
-    <div>
-      <p class="eyebrow rv">Patente A · B — in arabo</p>
-      <h1 class="rv d1">ذاكر بالعربي،<span class="hl">وادخل الامتحان بالإيطالي.</span></h1>
-      <p class="it-sub rv d1" lang="it">La patente italiana, spiegata in arabo.</p>
-
-      <div id="get" class="cta rv d2">
-        <p class="tap" data-tap>اضغط هنا ونزّل الأبلكيشن <span class="arrow" aria-hidden="true">↓</span></p>
-        <div data-stores style="width:100%;display:grid;gap:12px"></div>
-        <p class="free"><b>ابدأ ببلاش</b> · الدرس الأول كامل مجاناً</p>
-        <p class="soon" data-soon>نسخة أندرويد جاية قريب · <bdi lang="it">Android in arrivo</bdi></p>
-        <p class="iab-hint" data-iab-hint></p>
-      </div>
-    </div>
-
-    <div class="show rv d3" id="showcase">
-      <div class="stage">
-        <div class="phone">
-          <div class="screen" data-screens>
-            <img class="on" src="/assets/screens/quiz.webp" alt="" width="540" height="1169">
-            <img data-src="/assets/screens/theory.webp" alt="" width="540" height="1169">
-            <img data-src="/assets/screens/video.webp" alt="" width="540" height="1169">
-            <img data-src="/assets/screens/buddy.webp" alt="" width="540" height="1104">
-            <img data-src="/assets/screens/exam.webp" alt="" width="540" height="1169">
-            <img data-src="/assets/screens/game.webp" alt="" width="540" height="1169">
-            <img data-src="/assets/screens/mistakes.webp" alt="" width="540" height="1169">
-          </div>
-          <div class="island"></div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-copy">
+        <p class="eyebrow"><bdi lang="it">Patente A e B</bdi><span>نظري رخصة السواقة في إيطاليا</span></p>
+        <h1 id="hero-title">ذاكر الرخصة بالمصري.<br><span>واتدرّب بالإيطالي.</span></h1>
+        <p class="hero-description">افهم قواعد السواقة بلغتك، وحلّ الأسئلة بصيغة الامتحان الإيطالي. من أول درس لحدّ آخر امتحان تجريبي، كل ده في تطبيق واحد.</p>
+        <div class="download-actions" id="get">
+          <a class="store-button" data-store href="https://apps.apple.com/it/app/patentina/id6827443573" lang="it" dir="ltr">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3-.79-1.55.02-2.97.9-3.77 2.28-1.6 2.79-.41 6.92 1.16 9.18.76 1.11 1.68 2.35 2.88 2.31 1.15-.05 1.59-.75 2.98-.75 1.39 0 1.78.75 3 .72 1.24-.02 2.03-1.12 2.79-2.24.87-1.29 1.23-2.53 1.25-2.6-.03-.01-2.4-.92-2.45-3.68zM14.08 5.83c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.82 1.02.08 2.07-.52 2.71-1.28z"/></svg>
+            <span><small>Scarica su</small><strong>App Store</strong></span>
+          </a>
+          <p>التحميل مجاني على <bdi lang="en">iPhone</bdi><span aria-hidden="true"> · </span>أندرويد قريب</p>
+          <button class="text-button" type="button" data-store-help hidden>الستور مش بيفتح؟</button>
         </div>
       </div>
-      <div class="cap" data-cap aria-live="polite"><h3><span>Quiz</span>أسئلة الامتحان بالترجمة</h3><p>كل سؤال بالإيطالي، وجنبه الترجمة والشرح بالمصري.</p></div>
-      <div class="dots" data-dots></div>
-    </div>
-  </div>
 
-  <div class="wrap nums rv">
-    <div><b>7.000+</b><span>سؤال</span></div>
-    <div><b>24</b><span>درس</span></div>
-    <div><b>476</b><span>امتحان تجريبي</span></div>
-  </div>
+      <div class="hero-devices" dir="ltr" aria-label="شاشات من تطبيق Patentina" role="group">
+        <div class="hero-orbit" aria-hidden="true"></div>
+        <div class="device device-left">
+          <img src="/assets/screens/theory.webp" width="540" height="1170" alt="درس نظري في Patentina عن الحارة، مع رسم توضيحي للطريق">
+        </div>
+        <div class="device device-center">
+          <img src="/assets/screens/quiz.webp" width="540" height="1170" fetchpriority="high" alt="سؤال صح أو غلط عن طريق زلق، بالإيطالي ومعاه الترجمة بالمصري">
+        </div>
+        <div class="device device-right">
+          <img src="/assets/screens/exam.webp" width="540" height="1170" alt="شاشة المحاكاة بالإيطالي، مع عداد الوقت وخيارات الإجابة">
+        </div>
+      </div>
+    </section>
 
-  <div class="wrap">
-    <div class="final rv">
-      <h2>يلا نبدأ؟<span lang="it">La tua patente inizia qui.</span></h2>
-      <div class="cta"><div data-stores style="width:100%;display:grid;gap:12px"></div></div>
-      <div class="qr"><img src="/assets/qr.svg" alt="QR patentina.it/download" width="120" height="120"></div>
-    </div>
-  </div>
-</main>
+    <dl class="wrap stats" aria-label="المحتوى في أرقام">
+      <div><dt>دروس نظري حسب الموضوع</dt><dd>٢٤</dd></div>
+      <div><dt>سؤال للتدريب</dt><dd><bdi dir="ltr">+٧٬٠٠٠</bdi></dd></div>
+      <div><dt>امتحان تجريبي</dt><dd>٤٧٦</dd></div>
+    </dl>
 
-<footer>
-  <div class="wrap">
-    <nav>
-      <a href="https://help.patentina.it/support.html">Supporto</a>
-      <a href="https://help.patentina.it/privacy.html">Privacy</a>
-      <a href="https://help.patentina.it/terms.html">Termini</a>
-      <a href="mailto:support@patentina.it">support@patentina.it</a>
+    <section class="wrap features" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <h2 id="features-title">من فهم القاعدة لحدّ حلّ الامتحان.</h2>
+        <p>ذاكر الدرس، جرّب أسئلته، ولما تبقى جاهز اختبر نفسك بالوقت.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature feature-theory">
+          <div class="feature-copy">
+            <span class="feature-tag" lang="it">Teoria</span>
+            <h3>افهم النظري بالصور</h3>
+            <p>ذاكر كل موضوع بشرح بالمصري ورسومات توضح القاعدة، من أجزاء الطريق لحدّ الإشارات والأولوية. المصطلح الإيطالي موجود جنب معناه عشان تعرفه لما ييجي في السؤال.</p>
+          </div>
+          <div class="feature-media">
+            <div class="device"><img src="/assets/screens/theory.webp" width="540" height="1170" loading="lazy" decoding="async" alt="شرح الحارة بالمصري مع المصطلح الإيطالي ورسم لأجزاء الطريق"></div>
+          </div>
+        </article>
+
+        <article class="feature feature-quiz">
+          <div class="feature-copy">
+            <span class="feature-tag" lang="it">Quiz per argomento</span>
+            <h3>حلّ أسئلة الدرس</h3>
+            <p>جاوب صح أو غلط على أسئلة الدرس اللي ذاكرته. السؤال بالإيطالي ومعاه ترجمة بالمصري. لو غلطت، الشرح بيوضّح لك ليه الإجابة الصح هي صح أو غلط.</p>
+          </div>
+          <div class="feature-media">
+            <div class="device"><img src="/assets/screens/quiz.webp" width="540" height="1170" loading="lazy" decoding="async" alt="سؤال تدريب عن الطريق الزلق مع زرّين للإجابة ومصطلحات بالبرتقالي"></div>
+          </div>
+        </article>
+
+        <article class="feature feature-exam">
+          <div class="feature-copy">
+            <span class="feature-tag" lang="it">Esame simulato</span>
+            <h3>جرّب الامتحان بالوقت</h3>
+            <p>حلّ ٣٠ سؤال بالإيطالي في ٢٠ دقيقة. بعد ما تخلّص، شوف نتيجتك وراجع إجاباتك عشان تعرف إيه اللي محتاج تذاكره تاني.</p>
+          </div>
+          <div class="feature-media">
+            <div class="device"><img src="/assets/screens/exam.webp" width="540" height="1170" loading="lazy" decoding="async" alt="محاكاة تعرض سؤالًا من ٣٠، والوقت المتبقي وأرقام الأسئلة للتنقّل بينها"></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="section-heading practice-heading">
+        <h2>طرق تانية تثبّت بيها اللي اتعلّمته.</h2>
+      </div>
+      <div class="feature-grid practice-grid">
+        <article class="feature feature-video">
+          <div class="feature-copy">
+            <span class="feature-tag" lang="it">Video</span>
+            <h3>مصطلح في فيديو قصير</h3>
+            <p>اسمع الكلمة بالإيطالي، وشوف معناها بالمصري في رسم متحرك يورّيك بتتستخدم إمتى.</p>
+          </div>
+          <div class="feature-media">
+            <div class="device"><img src="/assets/screens/video.webp" width="540" height="1170" loading="lazy" decoding="async" alt="فيديو بيفرّق بين الحارة والجزء المخصص لسير العربيات"></div>
+          </div>
+        </article>
+
+        <article class="feature feature-mistakes">
+          <div class="feature-copy">
+            <span class="feature-tag" lang="it">Ripasso errori</span>
+            <h3>راجع الأسئلة اللي غلطت فيها</h3>
+            <p>ارجع للأسئلة اللي جاوبتها غلط، واقرا شرحها وجرّب تحلّها تاني.</p>
+          </div>
+          <div class="feature-media">
+            <div class="device"><img src="/assets/screens/mistakes.webp" width="540" height="1170" loading="lazy" decoding="async" alt="صفحة مراجعة الغلطات، فيها عدد الأسئلة وجلسات للمراجعة"></div>
+          </div>
+        </article>
+
+        <article class="feature feature-game">
+          <div class="feature-copy">
+            <span class="feature-tag" lang="it">Intersezione</span>
+            <h3>مين يعدّي الأول؟</h3>
+            <p>رتّب العربيات في تقاطعات مختلفة واتدرّب عملي على قواعد الأولوية.</p>
+          </div>
+          <div class="feature-media">
+            <div class="device"><img src="/assets/screens/game.webp" width="540" height="1170" loading="lazy" decoding="async" alt="لعبة الأولوية وفيها عربيات على تقاطع تقدر تختار ترتيب مرورها"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap faq" id="faq" aria-labelledby="faq-title">
+      <div class="section-heading"><h2 id="faq-title">أسئلة شائعة</h2></div>
+      <div class="faq-list">
+        <details>
+          <summary>أقدر أجرّب إيه مجانًا؟</summary>
+          <p>التحميل مجاني. تقدر تبدأ بنظري الدرس الأول واختباراته، وأول ٥ امتحانات تجريبية، وأول ٥ مستويات في لعبة التقاطعات، وأول درس مفردات.</p>
+        </details>
+        <details>
+          <summary>الأسئلة جوّه التطبيق بأي لغة؟</summary>
+          <p>في التدريب، السؤال بيظهر بالإيطالي ومعاه الترجمة والشرح بالمصري. الامتحان التجريبي بيعرض الأسئلة بالإيطالي عشان تتعوّد على صيغة الامتحان.</p>
+        </details>
+        <details>
+          <summary>إزاي أفتح باقي المحتوى؟</summary>
+          <p>بريميوم بيفتح باقي الدروس والتدريب. تقدر تختار اشتراك شهري بيتجدّد تلقائيًا، أو تدفع مرة واحدة للوصول الدائم. السعر النهائي بيظهر في الستور قبل تأكيد الشراء.</p>
+        </details>
+        <details>
+          <summary>التطبيق موجود على أندرويد؟</summary>
+          <p>Patentina متاح حاليًا على <bdi lang="en">iPhone</bdi>. نسخة أندرويد لسه ما نزلتش للعامة.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="wrap" aria-labelledby="final-title">
+      <div class="final">
+        <div>
+          <h2 id="final-title">ابدأ بالنظري وأول أسئلة تدريب.</h2>
+          <div class="download-actions">
+            <a class="store-button" data-store href="https://apps.apple.com/it/app/patentina/id6827443573" lang="it" dir="ltr">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3-.79-1.55.02-2.97.9-3.77 2.28-1.6 2.79-.41 6.92 1.16 9.18.76 1.11 1.68 2.35 2.88 2.31 1.15-.05 1.59-.75 2.98-.75 1.39 0 1.78.75 3 .72 1.24-.02 2.03-1.12 2.79-2.24.87-1.29 1.23-2.53 1.25-2.6-.03-.01-2.4-.92-2.45-3.68zM14.08 5.83c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.82 1.02.08 2.07-.52 2.71-1.28z"/></svg>
+              <span><small>Scarica su</small><strong>App Store</strong></span>
+            </a>
+          </div>
+        </div>
+        <figure class="download-qr">
+          <img src="/assets/qr.svg" width="104" height="104" loading="lazy" alt="كود QR لصفحة تنزيل Patentina">
+          <figcaption>امسح الكود بكاميرا الآيفون</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <a class="brand" href="/download/" aria-label="Patentina">
+      <img src="/assets/logo.webp" width="32" height="32" loading="lazy" alt="">
+      <span>Patentina</span>
+    </a>
+    <nav aria-label="الدعم والشروط">
+      <a href="https://help.patentina.it/support.html">الدعم</a>
+      <a href="https://help.patentina.it/privacy.html">الخصوصية</a>
+      <a href="https://help.patentina.it/terms.html">الشروط</a>
+      <a href="mailto:support@patentina.it" lang="en" dir="ltr">support@patentina.it</a>
     </nav>
-    <p class="legal">© <span data-year>2026</span> Patentina · Mahmoud Alai · P.IVA 18791391008 · Roma</p>
-  </div>
-</footer>
+    <p lang="it" dir="ltr">© 2026 Patentina · Mahmoud Alai · P. IVA 18791391008 · Roma</p>
+  </footer>
 
-<div class="dock" data-dock><div data-stores data-compact></div></div>
-
-<div class="sheet" data-sheet role="dialog" aria-modal="true" aria-labelledby="sh-t">
-  <div class="scrim" data-close></div>
-  <div class="panel">
-    <h3 id="sh-t">افتح الصفحة في المتصفح<span lang="it">Apri la pagina nel browser</span></h3>
-    <p data-sheet-why>التطبيق اللي انت فاتح منه ساعات بيمنع فتح الستور.</p>
-    <ol>
-      <li>اضغط على <span class="dots3">···</span> فوق على اليمين</li>
-      <li>اختار <b lang="it" data-open-label>«Apri nel browser»</b></li>
-      <li>واضغط على زرار التحميل تاني</li>
-    </ol>
-    <div class="urlbox">patentina.it/download</div>
-    <div class="actions">
-      <button class="btn main" data-escape>افتح في المتصفح <span lang="it">· Apri</span></button>
-      <button class="btn" data-copy>انسخ اللينك <span lang="it">· Copia link</span></button>
-      <button class="btn" data-close>رجوع</button>
+  <dialog class="store-dialog" aria-labelledby="store-dialog-title">
+    <form method="dialog">
+      <button class="dialog-close" type="submit" aria-label="اقفل تعليمات التحميل" autofocus>×</button>
+    </form>
+    <h2 id="store-dialog-title">افتح الصفحة في المتصفح</h2>
+    <p>لو الستور ما فتحش من جوّه التطبيق، افتح قائمة المشاركة أو <bdi>···</bdi> واختار <bdi lang="it">Apri nel browser</bdi> أو <bdi lang="en">Open in Safari</bdi>. بعدين اضغط على زرار التحميل تاني.</p>
+    <label for="download-url">لينك التحميل</label>
+    <input id="download-url" dir="ltr" type="url" value="https://patentina.it/download/" readonly>
+    <div class="dialog-actions">
+      <button class="button" type="button" data-copy>انسخ اللينك</button>
+      <a class="button button-secondary" href="https://apps.apple.com/it/app/patentina/id6827443573">افتح صفحة <bdi lang="en">App Store</bdi></a>
     </div>
-  </div>
-</div>
-<div class="pointer" data-pointer aria-hidden="true">
-  <svg viewBox="0 0 48 48" fill="none" stroke="#ff8a4f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 L38 12"/><path d="M20 11h18v18"/></svg>
-  <span>···</span>
-</div>
-<div class="toast" data-toast></div>
-
-<script>
-(function(){
-  "use strict";
-  // ===== Store configuration =====
-  var IOS_ID = "6827443573";
-  var IOS_URL = "https://apps.apple.com/it/app/patentina/id" + IOS_ID;
-  var IOS_DEEP = "itms-apps://apps.apple.com/it/app/patentina/id" + IOS_ID;
-  var PLAY_PKG = "com.patentina.app";
-  var PLAY_LIVE = false; // flip to true when the Google Play listing is public
-  var PLAY_URL = "https://play.google.com/store/apps/details?id=" + PLAY_PKG;
-  var PLAY_INTENT = "intent://details?id=" + PLAY_PKG + "#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=" + encodeURIComponent(PLAY_URL) + ";end";
-  var PAGE = "https://patentina.it/download/";
-
-  var d = document, b = d.body, ua = navigator.userAgent || "";
-  b.classList.remove("no-js");
-  var isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-  var isAndroid = /Android/i.test(ua);
-  var app = /musical_ly|Bytedance|TikTok|trill/i.test(ua) ? "TikTok"
-          : /Instagram/i.test(ua) ? "Instagram"
-          : /FBAN|FBAV|FB_IAB|FBIOS|FB4A/i.test(ua) ? "Facebook"
-          : /Messenger/i.test(ua) ? "Messenger"
-          : /Snapchat/i.test(ua) ? "Snapchat"
-          : /Line\//i.test(ua) ? "LINE"
-          : /Twitter|LinkedInApp|Pinterest/i.test(ua) ? "app"
-          : (isAndroid && /; wv\)/.test(ua)) ? "app" : "";
-  var inApp = !!app;
-  if (inApp) b.classList.add("iab");
-
-  // ===== Store buttons =====
-  var APPLE = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3-.79-1.55.02-2.97.9-3.77 2.28-1.6 2.79-.41 6.92 1.16 9.18.76 1.11 1.68 2.35 2.88 2.31 1.15-.05 1.59-.75 2.98-.75 1.39 0 1.78.75 3 .72 1.24-.02 2.03-1.12 2.79-2.24.87-1.29 1.23-2.53 1.25-2.6-.03-.01-2.4-.92-2.45-3.68zM14.08 5.83c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.82 1.02.08 2.07-.52 2.71-1.28z"/></svg>';
-  var PLAY = '<svg viewBox="0 0 24 24"><path fill="#00d4ff" d="M3.6 2.2c-.3.3-.4.7-.4 1.2v17.2c0 .5.1.9.4 1.2l.1.1 9.6-9.6v-.2L3.7 2.1z"/><path fill="#ffce00" d="M16.5 15.5l-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.2c1.1.6 1.1 1.6 0 2.2l-3.8 2.2z"/><path fill="#ff3a44" d="M16.6 15.4l-3.3-3.3-9.7 9.7c.4.4.9.4 1.6.1l11.4-6.5"/><path fill="#00f076" d="M16.6 8.8L5.2 2.3c-.7-.4-1.2-.3-1.6.1l9.7 9.7z"/></svg>';
-  function iosBtn(primary){
-    return '<a class="store ' + (primary ? "primary" : "secondary") + '" data-store="ios" href="' + IOS_URL + '" rel="noopener">' + APPLE +
-      '<span><small>Scarica gratis su</small><b>App Store</b></span></a>';
-  }
-  function playBtn(primary){
-    return '<a class="store ' + (primary ? "primary" : "secondary") + '" data-store="android" href="' + PLAY_URL + '" rel="noopener">' + PLAY +
-      '<span><small>Scarica gratis su</small><b>Google Play</b></span></a>';
-  }
-  var androidFirst = isAndroid && PLAY_LIVE;
-  var full = androidFirst ? playBtn(true) + iosBtn(false) : iosBtn(true) + (PLAY_LIVE ? playBtn(false) : "");
-  var compact = androidFirst ? playBtn(true) : iosBtn(true);
-  d.querySelectorAll("[data-stores]").forEach(function(el){ el.innerHTML = el.hasAttribute("data-compact") ? compact : full; });
-  if (PLAY_LIVE) d.querySelector("[data-soon]").remove();
-  // Android visitors while Play is not live: say it plainly instead of pushing the App Store.
-  if (isAndroid && !PLAY_LIVE) {
-    d.querySelector("[data-tap]").textContent = "على آيفون؟ نزّله من هنا";
-    d.querySelector("[data-soon]").innerHTML = "<b style='color:var(--ar-ink)'>نسخة أندرويد جاية قريب</b> · <bdi lang='it'>Android in arrivo</bdi>";
-  }
-
-  var hint = d.querySelector("[data-iab-hint]");
-  if (inApp && isIOS) hint.innerHTML = "لو الستور ما فتحش، اضغط <b>···</b> فوق واختار <b lang='it'>Apri nel browser</b>.";
-
-  // ===== Sheet =====
-  var sheet = d.querySelector("[data-sheet]"), pointer = d.querySelector("[data-pointer]");
-  function openSheet(){
-    if (app && app !== "app") d.querySelector("[data-sheet-why]").innerHTML = "<b>" + app + "</b> ساعات بيمنع فتح الستور من جوّه التطبيق. افتح الصفحة في المتصفح وهتشتغل على طول.";
-    d.querySelector("[data-open-label]").textContent = isIOS ? "«Apri nel browser» / «Open in Safari»" : "«Apri nel browser» / «Open in Chrome»";
-    sheet.classList.add("open"); pointer.classList.add("on");
-  }
-  function closeSheet(){ sheet.classList.remove("open"); pointer.classList.remove("on"); }
-  d.querySelectorAll("[data-close]").forEach(function(x){ x.addEventListener("click", closeSheet); });
-  function toast(t){ var el = d.querySelector("[data-toast]"); el.textContent = t; el.classList.add("on"); setTimeout(function(){ el.classList.remove("on"); }, 2200); }
-  d.querySelector("[data-copy]").addEventListener("click", function(){
-    var done = function(){ toast("اتنسخ ✓ · Link copiato"); };
-    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(PAGE).then(done, legacy); else legacy();
-    function legacy(){ var t = d.createElement("textarea"); t.value = PAGE; t.setAttribute("readonly",""); t.style.cssText = "position:fixed;opacity:0"; d.body.appendChild(t); t.select(); t.setSelectionRange(0, 999); try { d.execCommand("copy"); done(); } catch(e) { toast(PAGE); } d.body.removeChild(t); }
-  });
-  d.querySelector("[data-escape]").addEventListener("click", function(){
-    if (isAndroid) location.href = "intent://" + PAGE.replace(/^https:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=" + encodeURIComponent(PAGE) + ";end";
-    else if (isIOS) location.href = "x-safari-" + PAGE;
-    else window.open(PAGE, "_blank");
-  });
-
-  // ===== Store click handling (TikTok / Instagram / Facebook fix) =====
-  function tryOpen(url){
-    var left = false;
-    function onHide(){ if (d.hidden) left = true; }
-    d.addEventListener("visibilitychange", onHide);
-    window.addEventListener("pagehide", function(){ left = true; }, { once: true });
-    location.href = url;
-    setTimeout(function(){ d.removeEventListener("visibilitychange", onHide); if (!left && !d.hidden) openSheet(); }, 1800);
-  }
-  d.addEventListener("click", function(e){
-    var a = e.target.closest && e.target.closest("[data-store]"); if (!a) return;
-    var kind = a.getAttribute("data-store");
-    if (kind === "ios" && inApp && isIOS) { e.preventDefault(); tryOpen(IOS_DEEP); }
-    else if (kind === "android" && isAndroid) {
-      e.preventDefault(); tryOpen(inApp ? PLAY_INTENT : "market://details?id=" + PLAY_PKG);
-      if (!inApp) setTimeout(function(){ if (!d.hidden) location.href = PLAY_URL; }, 900);
-    }
-  });
-
-  // ===== Feature showcase: one caption at a time =====
-  var FEATS = [
-    ["Quiz", "أسئلة الامتحان بالترجمة", "كل سؤال بالإيطالي، وجنبه الترجمة والشرح بالمصري."],
-    ["Teoria", "النظري بالصور", "كل كلمة مهمة في الامتحان، بالصورة والشرح."],
-    ["Video", "فيديوهات قصيرة بالمصري", "كلمة واحدة، دقيقة واحدة، وتفهمها خلاص."],
-    ["Spiegami", "صاحبك بيشرحلك", "مش فاهم السؤال؟ اسأل، وهو يبسّطهولك."],
-    ["Esame simulato", "امتحان زي الحقيقي", "30 سؤال في 20 دقيقة، بنفس شكل الامتحان."],
-    ["Giochi", "اتعلم وانت بتلعب", "227 مستوى في التقاطعات: مين يعدّي الأول؟"],
-    ["Ripasso errori", "راجع غلطاتك", "كل سؤال غلطت فيه يرجعلك لحد ما تفهمه."]
-  ];
-  var imgs = d.querySelectorAll("[data-screens] img"), cap = d.querySelector("[data-cap]"), dotsEl = d.querySelector("[data-dots]");
-  var cur = 0, timer = null, DUR = 4200, reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  FEATS.forEach(function(f, i){ var bt = d.createElement("button"); bt.setAttribute("aria-label", f[0]); if (!i) bt.className = "on"; bt.addEventListener("click", function(){ go(i, true); }); dotsEl.appendChild(bt); });
-  var dots = dotsEl.children;
-  function load(i){ var im = imgs[i]; if (im && im.dataset.src) { im.src = im.dataset.src; im.removeAttribute("data-src"); } }
-  function go(i, user){
-    i = (i + FEATS.length) % FEATS.length; if (i === cur && !user) return;
-    load(i); load((i + 1) % FEATS.length);
-    imgs[cur].classList.remove("on"); dots[cur].className = "";
-    cur = i; imgs[cur].classList.add("on"); dots[cur].className = "on";
-    cap.classList.add("fade");
-    setTimeout(function(){ var f = FEATS[cur]; cap.innerHTML = "<h3><span>" + f[0] + "</span>" + f[1] + "</h3><p>" + f[2] + "</p>"; cap.classList.remove("fade"); }, 300);
-    schedule(user ? DUR * 1.6 : DUR);
-  }
-  function schedule(ms){ clearTimeout(timer); if (!reduce) timer = setTimeout(function(){ go(cur + 1); }, ms); }
-  window.addEventListener("load", function(){ load(1); });
-  d.addEventListener("visibilitychange", function(){ if (d.hidden) clearTimeout(timer); else schedule(DUR); });
-  schedule(DUR);
-
-  // ===== Reveal =====
-  var io = "IntersectionObserver" in window ? new IntersectionObserver(function(es){
-    es.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
-  }, { threshold: .12 }) : null;
-  d.querySelectorAll(".rv").forEach(function(el){ io ? io.observe(el) : el.classList.add("in"); });
-
-  // ===== Sticky button after the hero CTA scrolls away =====
-  var dock = d.querySelector("[data-dock]"), heroCta = d.getElementById("get"), finalCta = d.querySelector(".final");
-  function onScroll(){
-    var past = heroCta.getBoundingClientRect().bottom < 0;
-    var atFinal = finalCta.getBoundingClientRect().top < innerHeight;
-    dock.classList.toggle("show", past && !atFinal);
-  }
-  addEventListener("scroll", onScroll, { passive: true }); onScroll();
-  d.querySelector("[data-year]").textContent = new Date().getFullYear();
-})();
-</script>
+    <p class="copy-status" role="status"></p>
+  </dialog>
 </body>
 </html>
