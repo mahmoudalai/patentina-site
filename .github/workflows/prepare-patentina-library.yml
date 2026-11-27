@@ -1,0 +1,32 @@
+name: Stage verified Patentina library files
+on:
+  push:
+    branches: [patentina-library-upload-20261127]
+    paths: [.github/workflows/prepare-patentina-library.yml]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Verify the ZIP and stage the public site files
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          bundle="$RUNNER_TEMP/patentina-library.zip"
+          asset="$(gh api "repos/$GITHUB_REPOSITORY/releases" --jq '[.[] | select(.draft and .name == "Patentina library upload staging") | .assets[] | select(.name == "release.zip" and .state == "uploaded") | .id] | if length == 1 then .[0] else error("expected one uploaded draft asset") end')"
+          gh api -H 'Accept: application/octet-stream' "repos/$GITHUB_REPOSITORY/releases/assets/$asset" > "$bundle"
+          printf '%s  %s\n' 'b0f0c2f1e063afe07bef466b1beba83eb0a4e7e6adac79d9279cfcfdb952a538' "$bundle" | sha256sum --check
+          git fetch --no-tags --depth=1 origin refs/heads/main
+          git switch --detach FETCH_HEAD
+          unzip -q "$bundle"
+          git add -- library robots.txt sitemap.xml
+          test "$(git diff --cached --name-only | wc -l)" -eq 55
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Publish the Patentina PDF library'
+          git push origin HEAD:refs/heads/patentina-library-release-20261127
